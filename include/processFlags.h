@@ -10,6 +10,6 @@
  * @param argv Flags themselves, argv[] from main().
  */
 
-flags *processFlags(int argc, char *argv[]);
+Flags *processFlags(int argc, char *argv[]);
 
 #endif // !PROCESS_FLAGS

@@ -4,7 +4,7 @@
 /**
  *@brief A flags structure, contains the state of every flag provided
  */
-typedef struct flags {
+typedef struct Flags {
   /**
    * @brief upper, indicates if -u or --upper flag was set.
    * If set, includes uppercase letters in final string.
@@ -27,6 +27,6 @@ typedef struct flags {
    * @brief size, 16 by default, overwritten if set.
    */
   int length;
-} flags;
+} Flags;
 
 #endif
