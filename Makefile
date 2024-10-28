@@ -25,7 +25,9 @@ OBJ = $(SRC:.c=.o)
 
 # Output executable
 TARGET = bsgen
-
+PREFIX ?= /usr/local
+MANDIR = $(PREFIX)/share/man/man1
+MANPAGE = man/bsgen.1
 # Default rule
 all: $(TARGET)
 
@@ -41,6 +43,15 @@ $(TARGET): $(OBJ)
 clean:
 	rm -f $(OBJ) $(TARGET)
 
-# Phony targets
-.PHONY: all clean
+install: $(TARGET)
+	install -d $(PREFIX)/bin
+	install -m 755 $(TARGET) $(PREFIX)/bin
+	install -d $(MANDIR)
+	install -m 644 $(MANPAGE) $(MANDIR)
 
+uninstall:
+	rm -f $(PREFIX)/bin/$(TARGET)
+	rm -f $(MANDIR)/$(MANPAGE)
+
+# Phony targets
+.PHONY: all clean install uninstall
