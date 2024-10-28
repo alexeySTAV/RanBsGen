@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-flags *processFlags(int argc, char *argv[]) {
-  flags *fl = (flags *)malloc(sizeof(flags));
+Flags *processFlags(int argc, char *argv[]) {
+  Flags *fl = (Flags *)malloc(sizeof(Flags));
   fl->length = 16;
 
   struct option options[] = {{"upper", no_argument, NULL, 'u'},
