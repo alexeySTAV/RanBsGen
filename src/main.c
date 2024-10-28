@@ -1,9 +1,10 @@
 #include "../include/constructString.h"
 #include "../include/processFlags.h"
+#include "../include/random.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 int main(int argc, char *argv[]) {
+  srand(randseed());
   Flags *fl = processFlags(argc, argv);
   if (fl == NULL)
     return 0;

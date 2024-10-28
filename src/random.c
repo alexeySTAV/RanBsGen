@@ -10,13 +10,11 @@
 
 int randseed() {
   int stack_var;
-  srand(time(NULL));
   int seed = time(NULL) ^ getpid() ^ (int)&stack_var;
   return seed;
 }
 
 int softRand(int upto) {
-  srand(randseed());
   int val = rand();
   return val % upto;
 }
