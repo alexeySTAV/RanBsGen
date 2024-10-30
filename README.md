@@ -45,13 +45,13 @@ bsgen [options]
 By default, bsgen generates a 16 characters long string consisting of only lowercase letters.
 To add uppercase letters, special characters, numbers or alternate the string's length, add flags.
 
-** -u   --upper** Add uppercase letters.
+-u   --upper: Add uppercase letters.
 
-** -c   --characters** Add special characters.
+-c   --characters: Add special characters.
 
-** -n   --numbers** Add numbers.
+-n   --numbers: Add numbers.
 
-** -l   --length** Specify desired length.
+-l   --length: Specify desired length.
 
 ### **Examples**
 
