@@ -1,0 +1,66 @@
+.\" Man page for bsgen
+.TH BSGEN 1 "October 2024" "1.0" "Random Bullshit Generator"
+.SH NAME
+bsgen \- generate a random string
+.SH SYNOPSIS
+.BS
+.BS
+bsgen [OPTIONS]
+.BS
+.SH DESCRIPTION
+.BS
+.BS
+bsgen generates a random string based on the provided options. By default, it generates a string of length 16.
+.BS
+.SH OPTIONS
+.BS
+.TP
+.B -u, --upper
+Include uppercase letters in the generated string.
+.TP
+.B -n, --numbers
+Include numbers (0-9) in the generated string.
+.TP
+.B -c, --characters
+Include special characters (e.g., &, #, *, etc.) in the generated string.
+.TP
+.B -l, --length <length>
+Set the length of the generated string. The default length is 16.
+.TP
+.B -h, --help
+Display this help message and exit.
+.BS
+.SH EXAMPLES
+.BS
+.BS
+To generate a random string of length 16 with uppercase letters:
+.BS
+.BS
+bsgen -u
+.BS
+.BS
+To generate a random string of length 12 that includes numbers:
+.BS
+.BS
+bsgen -n -l 12
+.BS
+.BS
+To generate a random string that includes special characters and has a length of 20:
+.BS
+.BS
+bsgen -c -l 20
+.BS
+.BS
+.SH AUTHOR
+.BS 
+Alexey Stavnichii
+.BS
+.SH REPORTING BUGS
+.BS
+Report bugs to <your_email@example.com>
+.BS
+.SH COPYRIGHT
+.BS
+Copyright (C) 2024 Alexey Stavnichii
+.BS
+
